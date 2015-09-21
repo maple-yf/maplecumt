@@ -6,3 +6,4 @@ categories: jekyll update
 ---
 
 Hello world.
+汉字测试。
