@@ -134,8 +134,12 @@ li {
 .post-list li a {
 	color: #47a3da;	
     font-size:20px;
+    
 }
-
+.post-list li a:hover{
+    border-bottom: 2px solid #47a3da;
+    text-decoration:none;
+}
 #line {
 	opacity: 0.1;
 	color: #000;
