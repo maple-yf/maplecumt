@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   One step.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://maplecumt.com" # the base hostname & protocol for your site
+url: "http://blog.maplecumt.com" # the base hostname & protocol for your site
 twitter_username: maplecumt
 github_username:  maplecumt
 
