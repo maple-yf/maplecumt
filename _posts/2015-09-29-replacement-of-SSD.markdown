@@ -22,8 +22,14 @@ categories: Hardware
 <img src="https://raw.githubusercontent.com/maplecumt/maplecumt.github.io/master/images/2015-09-29-replacement%20of%20SSD/1.png" width="600px" height="287px" />
 
 看一下机械硬盘和固态硬盘的对比照，此时固态硬盘已经装在了主硬盘的外壳里了。
+
+<br>
+
 <div align="center">
 <img src="https://raw.githubusercontent.com/maplecumt/maplecumt.github.io/master/images/2015-09-29-replacement%20of%20SSD/4.png" width="600px" height="287px" />
 </div>
+
+<br>
+
 下图是装上硬盘托架之后的光驱位外边缘，这个硬盘托架还是比较合适的，就是有点贵。
 SSD装好之后，在里边装了win10，但是在win10里总是找不到原来的机械硬盘。进到UEFI里边是能看到的，说明硬盘托架的接口没问题，后来我尝试从机械硬盘启动，发现可以正常使用，而且在原来的系统里也能看到SSD的盘符。然后我又切回到SSD启动，机械硬盘居然神奇的出现了，并且一切使用都是正常的，我也不知道为什么，总之，这次的SSD更换也算是成功了！
