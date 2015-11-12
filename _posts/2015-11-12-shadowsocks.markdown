@@ -23,19 +23,25 @@ ShadowScoks是一个非常易用的翻墙工具，把它安装在自己的VPS上
 ![](https://raw.githubusercontent.com/maplecumt/maplecumt.github.io/master/images/2015-11-12-shadowsocks/ss3.png)
 
 安装失败，出现错误提示：
+
 <pre class="prettyprint">
 	./shadowsocks.sh: line 111:  6396 Segmentation fault      (core dumped) apt-get -y update
 	Reading package lists..../shadowsocks.sh: line 111:  6461 Segmentation fault      (core dumped) apt-get -y install python python-dev python-pip curl wget unzip gcc swig automake make perl cpio
 </pre>
+
 分别执行 (core dumped)后面的语句
+
 <pre class="prettyprint">
 	apt-get -y update
 	apt-get -y install python python-dev python-pip curl wget unzip gcc swig automake make perl cpio
 </pre>
+
 然后，重新执行:
+
 <pre class="prettyprint">
 	./shadowsocks.sh 2>&1 | tee shadowsocks.log
 </pre>
+
 等待5分钟左右，即可安装成功，安装成功之后就会通过屏幕输出，您的IP地址，端口，密码，及加密方式。
 
 ![](https://raw.githubusercontent.com/maplecumt/maplecumt.github.io/master/images/2015-11-12-shadowsocks/ss4.png)
