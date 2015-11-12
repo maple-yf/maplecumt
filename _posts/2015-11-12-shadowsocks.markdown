@@ -9,7 +9,8 @@ ShadowScoks是一个非常易用的翻墙工具，把它安装在自己的VPS上
 # 安装 #
 输入su进入root。
 分别复制以下命令到命令行：
-<pre class="prettyprint">
+
+<pre class="command-line">
 	wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
 	chmod +x shadowsocks.sh
 	./shadowsocks.sh 2>&1 | tee shadowsocks.log
