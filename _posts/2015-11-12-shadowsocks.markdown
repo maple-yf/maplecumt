@@ -4,9 +4,9 @@ title:  "安装 ShadowScoks"
 date:   2015-11-12 15:30:00
 categories: Daily
 ---
-### 前言 ###
+# 前言 #
 ShadowScoks是一个非常易用的翻墙工具，把它安装在自己的VPS上，就可以随心所欲的上网啦！
-### 安装 ###
+# 安装 #
 输入su进入root。
 分别复制以下命令到命令行：
 <pre class="prettyprint">
