@@ -29,14 +29,14 @@ Reading package lists..../shadowsocks.sh: line 111:  6461 Segmentation fault    
 {% endhighlight %}
 
 分别执行 (core dumped)后面的语句
-{% highlight linenos %}
+{% highlight shell linenos %}
 apt-get -y update
 apt-get -y install python python-dev python-pip curl wget unzip gcc swig automake make perl cpio
 {% endhighlight %}
 
 然后，重新执行:
 
-{% highlight linenos %}
+{% highlight shell linenos %}
 ./shadowsocks.sh 2>&1 | tee shadowsocks.log
 {% endhighlight %}
 
