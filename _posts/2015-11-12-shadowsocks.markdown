@@ -9,7 +9,7 @@ ShadowScoks是一个非常易用的翻墙工具，把它安装在自己的VPS上
 # 安装 #
 输入su进入root。
 分别复制以下命令到命令行：
-{% highlight shell linenos %}
+{% highlight ruby linenos %}
 wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
 chmod +x shadowsocks.sh
 ./shadowsocks.sh 2>&1 | tee shadowsocks.log
@@ -23,20 +23,20 @@ chmod +x shadowsocks.sh
 ![](https://raw.githubusercontent.com/maplecumt/maplecumt.github.io/master/images/2015-11-12-shadowsocks/ss3.png)
 
 安装失败，出现错误提示：
-{% highlight shell linenos %}
+{% highlight ruby linenos %}
 ./shadowsocks.sh: line 111:  6396 Segmentation fault      (core dumped) apt-get -y update
 Reading package lists..../shadowsocks.sh: line 111:  6461 Segmentation fault      (core dumped) apt-get -y install python python-dev python-pip curl wget unzip gcc swig automake make perl cpio
 {% endhighlight %}
 
 分别执行 (core dumped)后面的语句
-{% highlight shell linenos %}
+{% highlight ruby linenos %}
 apt-get -y update
 apt-get -y install python python-dev python-pip curl wget unzip gcc swig automake make perl cpio
 {% endhighlight %}
 
 然后，重新执行:
 
-{% highlight shell linenos %}
+{% highlight ruby linenos %}
 ./shadowsocks.sh 2>&1 | tee shadowsocks.log
 {% endhighlight %}
 
@@ -46,7 +46,7 @@ apt-get -y install python python-dev python-pip curl wget unzip gcc swig automak
 
 如果您想多用户使用，请配置 /etc/shadowsocks.json 这个文件。配置模版：
 
-{% highlight shell linenos %}
+{% highlight ruby linenos %}
 {
     "server":"your_server_ip",
     "local_address": "127.0.0.1",
