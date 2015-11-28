@@ -9,10 +9,12 @@ ShadowScoks是一个非常易用的翻墙工具，把它安装在自己的VPS上
 # 安装 #
 输入su进入root。
 分别复制以下命令到命令行：
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"> wget <span style="color: #333333">--</span>no<span style="color: #333333">-</span>check<span style="color: #333333">-</span>certificate https<span style="color: #333333">:</span><span style="color: #888888">//raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh</span>
+
+<div class="highlight" style="background: #ffffff"> wget <span style="color: #333333">--</span>no<span style="color: #333333">-</span>check<span style="color: #333333">-</span>certificate https<span style="color: #333333">:</span><span style="color: #888888">//raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh</span>
  chmod <span style="color: #333333">+</span>x shadowsocks.sh
  .<span style="color: #333333">/</span>shadowsocks.sh <span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">&gt;&amp;</span><span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">|</span> tee shadowsocks.log
-</pre></div>
+</div>
+
 执行最后一条命令之后，出现一下界面：
 
 ![](https://raw.githubusercontent.com/maplecumt/maplecumt.github.io/master/images/2015-11-12-shadowsocks/ss1.png)
@@ -23,15 +25,15 @@ ShadowScoks是一个非常易用的翻墙工具，把它安装在自己的VPS上
 
 安装失败，出现错误提示：
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%">.<span style="color: #333333">/</span>shadowsocks.sh<span style="color: #333333">:</span> line <span style="color: #0000DD; font-weight: bold">111</span><span style="color: #333333">:</span>  <span style="color: #0000DD; font-weight: bold">6396</span> Segmentation fault      (core dumped) apt<span style="color: #333333">-</span>get <span style="color: #333333">-</span>y update
+<div class="highlight" style="background: #ffffff">.<span style="color: #333333">/</span>shadowsocks.sh<span style="color: #333333">:</span> line <span style="color: #0000DD; font-weight: bold">111</span><span style="color: #333333">:</span>  <span style="color: #0000DD; font-weight: bold">6396</span> Segmentation fault      (core dumped) apt<span style="color: #333333">-</span>get <span style="color: #333333">-</span>y update
 Reading package lists....<span style="color: #333333">/</span>shadowsocks.sh<span style="color: #333333">:</span> line <span style="color: #0000DD; font-weight: bold">111</span><span style="color: #333333">:</span>  <span style="color: #0000DD; font-weight: bold">6461</span> Segmentation fault      (core dumped) apt<span style="color: #333333">-</span>get <span style="color: #333333">-</span>y install python python<span style="color: #333333">-</span>dev python<span style="color: #333333">-</span>pip curl wget unzip gcc swig automake make perl cpio
-</pre></div>
+</div>
 
 
 分别执行 (core dumped)后面的语句
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%">apt<span style="color: #333333">-</span>get <span style="color: #333333">-</span>y update
+<div class="highlight" style="background: #ffffff">apt<span style="color: #333333">-</span>get <span style="color: #333333">-</span>y update
 apt<span style="color: #333333">-</span>get <span style="color: #333333">-</span>y install python python<span style="color: #333333">-</span>dev python<span style="color: #333333">-</span>pip curl wget unzip gcc swig automake make perl cpio
-</pre></div>
+</div>
 
 然后，重新执行:
 
@@ -45,7 +47,7 @@ apt<span style="color: #333333">-</span>get <span style="color: #333333">-</span
 
 如果您想多用户使用，请配置 /etc/shadowsocks.json 这个文件。配置模版：
 
-<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%">{
+<div class="highlight" style="background: #ffffff">{
     <span style="background-color: #fff0f0">&quot;server&quot;</span><span style="color: #333333">:</span><span style="background-color: #fff0f0">&quot;your_server_ip&quot;</span>,
     <span style="background-color: #fff0f0">&quot;local_address&quot;</span><span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;127.0.0.1&quot;</span>,
     <span style="background-color: #fff0f0">&quot;local_port&quot;</span><span style="color: #333333">:</span><span style="color: #0000DD; font-weight: bold">1080</span>,
@@ -60,7 +62,7 @@ apt<span style="color: #333333">-</span>get <span style="color: #333333">-</span
     <span style="background-color: #fff0f0">&quot;method&quot;</span><span style="color: #333333">:</span><span style="background-color: #fff0f0">&quot;aes-256-cfb&quot;</span>,
     <span style="background-color: #fff0f0">&quot;fast_open&quot;</span><span style="color: #333333">:</span> <span style="color: #007020">false</span>
 }
-</pre></div>
+</div>
 
 Windows客户端下载地址：[https://shadowsocks.org/en/download/clients.html](https://shadowsocks.org/en/download/clients.html)
 使用教程：[http://wiki.ssnode.co/index.php?option=com_content&view=article&id=4:about-your-home-page&catid=9&Itemid=101](http://wiki.ssnode.co/index.php?option=com_content&view=article&id=4:about-your-home-page&catid=9&Itemid=101)
