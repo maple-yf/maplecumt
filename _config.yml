@@ -12,7 +12,6 @@ github_username:  maplecumt
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
 
 #duoshuo
 duoshuo_id: maplecumt
