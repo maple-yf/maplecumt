@@ -15,7 +15,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsoc
 chmod +x shadowsocks.sh
 ./shadowsocks.sh 2>&1 | tee shadowsocks.log
 {% endhighlight %}
->>>>>>> parent of bb6ca74... Change highlight to sublimehighlight
+
 执行最后一条命令之后，出现一下界面：
 
 ![](https://raw.githubusercontent.com/maplecumt/maplecumt.github.io/master/images/2015-11-12-shadowsocks/ss1.png)
