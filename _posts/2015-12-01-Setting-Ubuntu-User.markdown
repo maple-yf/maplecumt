@@ -10,13 +10,13 @@ categories: Web
 ## 为Ubuntu添加新用户 ##
 在网上查到为Ubuntu填加新用户的方式是 sudo useradd me和passwd me来设置，但是，这样设置有一个很大的坑，因为这样设置的用户信息是不全的，直接导致使用这种方式设置的用户在进行远程登陆的时候，会出现 
 	
-```shell
+```
 Could not chdir to home directory /home/me: No such file or directory	
 ```
 
 的错误，可以用过输入 bash 来进入正常的状态
 
-```shell
+```
 $ bash
 me@server:/$
 ```
@@ -25,13 +25,13 @@ me@server:/$
 [http://askubuntu.com/questions/28969/how-do-you-change-the-default-shell-for-all-users-to-bash](http://askubuntu.com/questions/28969/how-do-you-change-the-default-shell-for-all-users-to-bash "点击这里查看（Jack O'Connor的答案）")。
 方法就是，如果是root用户：
 
-```shell
+```
 usermod -s /bin/bash USERNAME
 ```
 
 如果不是root用户：
 
-```shell
+```
 sudo -u USERNAME chsh -s /bin/bash
 ```
 
@@ -44,7 +44,7 @@ sudo -u USERNAME chsh -s /bin/bash
 因为本人菜鸟一枚，这里记录一下刚刚学到的一个小命令，就是root用户和普通用户的来回切换：
 
 
-```shell
+```
 
 $su root
 password[]		###切换到root用户
