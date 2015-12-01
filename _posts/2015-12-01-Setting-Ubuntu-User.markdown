@@ -47,9 +47,9 @@ sudo -u USERNAME chsh -s /bin/bash
 ```
 
 $su root
-password[]		###切换到root用户
+password[]		
 
 $su me
-password[]		###切换到me用户
+password[]		
 
 ```
