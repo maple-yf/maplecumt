@@ -40,7 +40,11 @@ h1, h2, h3, h4, h5, h6 {
   color:#0099CC;
   font-weight: bold;
 }
-
+.category{
+	color:#0099CC;
+	font-weight:bold;
+	text-transform:capitalize;
+}
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
