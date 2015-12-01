@@ -44,5 +44,7 @@ sudo -u USERNAME chsh -s /bin/bash
 因为本人菜鸟一枚，这里记录一下刚刚学到的一个小命令，就是root用户和普通用户的来回切换：
 
 ```
-sudo -u USERNAME chsh -s /bin/bash
+$su root		#切换到root用户
+
+$su me			#切换到me用户
 ```
