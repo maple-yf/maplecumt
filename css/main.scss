@@ -32,6 +32,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+.post h1, h2, h3, h4, h5, h6 {   
+  color:#B4DAF0;
+  font-weight: bold;
+}
+
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
