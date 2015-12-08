@@ -23,7 +23,7 @@ Check out the [Jekyll docs][jekyll] for more info on how to get the most out of 
 
 SyntaxtaxHighLighter代码插件
 <pre >
-	<code class="JavaScript">
+	<code class="javascript">
     /**
      * SyntaxHighlighter
      */
