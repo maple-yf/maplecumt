@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "研究生毕业论文写作日志ajksdfhjkhskj0sdfhudsighui3"
+title:  "研究生毕业论文写作日志-03"
 date:   2016-03-04 24:00:00
 categories: Graduate-Paper
 ---
