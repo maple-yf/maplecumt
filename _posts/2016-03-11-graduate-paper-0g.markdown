@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "研究生毕业论文写作日志-07"
-date:   2016-03-11 24:00:00
+date:   2016-03-11 23:00:00
 categories: Graduate-Paper
 ---
 <strong>研究生毕业论文写作日志。</strong>
